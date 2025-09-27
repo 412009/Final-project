@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&display=swap');
+.images{
+    background-color: rgba(44, 90, 169, 0.855);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:15px;
+}
+
+.text{
+   font-family: "Roboto Slab", serif;
+   font-optical-sizing: auto;
+    color:white;
+    background-color:rgba(44, 90, 169, 0.855);
+    font-size: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
