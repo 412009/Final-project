@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=TASA+Orbiter:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Emilys+Candy&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Parisienne&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&family=UnifrakturMaguntia&display=swap');
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  background-color:rgb(8, 168, 193) ;
+  height:auto;
+  height: 100vh;
+  width:100vw;
+  align-items: center;
+}
+.intro{
+    display: flex;
+}
+.nav {
+   position: sticky;
+   top: 0;
+  z-index: 1000;
+  width: 100%;
+  height:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 1px;
+  background-color:rgb(8, 168, 193) ;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  padding-right: 40px;
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+}
+
+#sign {
+  font-weight: bold;
+  color: rgb(137, 251, 213);
+}
+.textsection{
+  font-size: 20px;
+  display: block;
+  color:aliceblue;
+  width:35%;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  margin-top: 3%;
+  margin-left: 7%;
+}
+#title{
+font-size: 75px;
+padding-top: 5rem;
+ font-family: "Roboto Slab", serif;
+ font-optical-sizing: auto;
+ transform: translateX(5%);
+}
+#head{
+  color:rgba(127, 255, 212, 0.934);
+  font-size: 60px;
+  transform: translateX(35%);
+  margin: 0%;
+  padding: 0px;
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.textsection button{
+  border: none;
+  font-size: 20px;
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  padding:10px;
+  width:30%;
+  background-color: rgba(29, 223, 248, 0.845);
+  color:beige;
+}
+.textsection button:hover{
+cursor: pointer;
+border-bottom: 3px solid transparent ;
+
+}
+.imagesection img{
+  object-fit: cover;
+  transform: translateY(0%);
+  width:85%;
+  height: 340px;
+  margin-left: 15%;
+}
+#bio{
+  text-decoration:underline;
+   font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: rgb(147, 203, 252);
+  border-radius: 10px;
+  margin: 45px;
+  padding: 20px;
+  padding-left: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.title2{
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: rgb(0, 136, 255);
+  margin: 3rem;
+  padding: 15px;
+  width:50%;
+}
+.container8{
+  width:100%;
+  background-color: rgb(12, 40, 139);
+  padding: 2rem;
+}
+.sliderwrapper{
+  position: relative;
+  max-width: 85rem;
+  margin: 0 auto;
+}
+.slider{
+  display: flex;
+  aspect-ratio: 12/5;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.slider2{
+  display: flex;
+  aspect-ratio: 15/7;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 2rem 2rem 2rem -0.65rem rgba(12, 99, 161, 0.968);
+  border-radius: 0.5rem;
+}
+.slider2 img{
+  flex:1 0 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+.slider2::-webkit-scrollbar{
+  display: none;
+}
+.slider::-webkit-scrollbar{
+  display: none;
+}
+.slider img{
+  flex:1 0 100%;
+  object-fit: contain;
+  scroll-snap-align: start;
+
+}
+
+.slidernav{
+  display:flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slidernav a{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+}
+.slidernav a:hover{
+  opacity:1;
+}
+.text{
+  color: #fff;
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin:90px;
+}
+.venisia{
+  width: 100vw;
+  height:100vh;
+}
+.lemetropole{
+  width: 100vw;
+  height:100vh;
+}
+.lemetropole img{
+  object-fit: cover;
+  margin-left: 20%;
+  width:60%;
+  height:96%;
+  box-shadow: 5rem 2rem 2rem -0.40rem rgba(12, 99, 161, 0.968);
+
+}
+.venisia img{
+  object-fit: cover;
+  margin-left: 20%;
+  width:60%;
+  height:96%;
+  box-shadow: 5rem 2rem 2rem -0.40rem rgba(12, 99, 161, 0.968);
+}
+.fouad{
+  margin-top:45rem;
+}
+.vid iframe{
+  border-radius: 0rem;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height:70vh;
+  margin-left: 19%;
+  box-shadow:2rem 2rem 2rem -0.40rem rgba(12, 99, 161, 0.968); ;
+}
