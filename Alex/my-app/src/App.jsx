@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Login from './login/login.jsx';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// IMPORTANT: Added 'Link' to the import list
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; 
 import pic4 from './assets/gleembay.jpg';
 import pic3 from './assets/gleem.jpg';
 import pic from './assets/san.jpg';
@@ -17,7 +18,15 @@ import MapM from './MapM/map.jsx';
 import Map1 from './Mapsh/map.jsx'
 import Mapsm from './Mapsm/map.jsx'
 import Mapss from './Mapss/map.jsx';
-import Section2 from './sections2/section2.jsx'
+
+// Mapping region names to their URL paths for easy access in the sidebar
+const REGION_PATHS = {
+    'San Stefano': '/san-stefano',
+    'El Shatby': '/el-shatby',
+    'Mehatet Elraml': '/mehatet-elraml',
+    'Smouha': '/smouha'
+};
+
 
 function App() {
   // State to hold the names of the favorited regions
@@ -40,18 +49,24 @@ function App() {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  
+  // Handler for clicking a link in the sidebar (closes sidebar after navigation)
+  const handleLinkClick = () => {
+    setIsSidebarOpen(false);
+  };
+
 
   return (
     <>
       <BrowserRouter>
-        {/* Favorites Sidebar (conditionally rendered) */}
+        {/* Favorites Sidebar (using your preferred inline styles) */}
         <div style={{
           position: 'fixed',
           top: 0,
           right: 0,
           width: '300px',
           height: '100%',
-          backgroundColor: 'white',
+          backgroundColor: 'rgba(65, 66, 68, 0.82)',
           boxShadow: '-2px 0 5px rgba(0,0,0,0.5)',
           transition: 'transform 0.3s ease-in-out',
           transform: isSidebarOpen ? 'translateX(0)' : 'translateX(100%)',
@@ -63,24 +78,33 @@ function App() {
           <button 
             onClick={toggleSidebar} 
             style={{
-              background: 'none',
+              background: 'none', // Added background none for consistency
               border: 'none',
               fontSize: '24px',
               cursor: 'pointer',
               position: 'absolute',
               top: '10px',
-              right: '10px'
+              right: '10px',
+              color: 'white', // Ensure the close button is visible on the dark background
             }}>
-            &times;
+            <div className='close'>&times;</div>
           </button>
-          <h2 style={{ marginTop: '40px' }}>My Saved Places</h2>
+          <h2 className='title'style={{ 
+            marginTop: '40px',color:'rgba(253, 75, 161, 1)',marginBottom:'20px'}}>My Saved Places</h2>
           {favoritedRegions.length === 0 ? (
-            <p>No places saved yet.</p>
+            <p id='no' style={{ color: 'rgba(251, 247, 251, 1)' }}>No places saved yet. Click a heart to add one!</p>
           ) : (
-            <ul>
+            <ul style={{ padding: 0, listStyle: 'none' }}>
               {favoritedRegions.map((name, index) => (
-                <li key={index} style={{ marginBottom: '10px' }}>
-                  {name}
+                <li key={index} style={{ marginBottom: '20px', fontSize:'20px' }}>
+                  {/* The name is now a clickable Link */}
+                  <Link 
+                    to={REGION_PATHS[name]} 
+                    onClick={handleLinkClick} // Closes sidebar when link is clicked
+                   className='fav2' style={{ textDecoration: 'none', color: 'rgba(251, 247, 251, 1)' }} // Your preferred color
+                  >
+                    {name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -154,4 +178,3 @@ function App() {
 }
 
 export default App;
-
