@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Emilys+Candy&family=Fleur+De+Leah&family=Mea+Culpa&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Parisienne&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Emilys+Candy&family=Mea+Culpa&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Parisienne&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&family=Story+Script&family=TASA+Orbiter:wght@400..800&family=Tagesschrift&family=UnifrakturMaguntia&display=swap');
 .images{
     background-color: rgba(44, 90, 169, 0.855);
     display: flex;
@@ -20,3 +22,32 @@
     align-items: center;
     flex-direction: column;
 }
+#no{
+    color:white;
+}
+
+.close{
+     background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color:rgb(250, 247, 247);
+
+}
+.title{ 
+ font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.fav2{
+font-family: "Playwrite ES", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
