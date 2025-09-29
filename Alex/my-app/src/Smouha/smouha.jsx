@@ -6,7 +6,7 @@ import pic5 from '../assets/Antoniades.jpg'
 import pic6 from '../assets/Antoniades2.jpg'
 import pic7 from '../assets/Antoniades3.webp'
 import pic8 from '../assets/Antoniades4.png'
-import pic9 from '../assets/Stefano2.jpg'
+import pic9 from '../assets/stefano2.jpg'
 import pic10 from '../assets/padestrian.jpg'
 import pic11 from '../assets/greenplaza3.jpg'
 function Smouha() {
