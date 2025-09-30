@@ -85,7 +85,7 @@ function Login() {
           <button type='submit' className={styles.formbtnsubmit}>Sign In</button>
         </form>
 
-        <p>Don't have an account? <a href="#" className='form-link'>Sign up</a></p>
+        <p>Don't have an account? < Link to='/signup' className='form-link'>Sign up</Link></p>
       </div>
     </div>
     </>
