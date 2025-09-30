@@ -18,6 +18,7 @@ import MapM from './MapM/map.jsx';
 import Map1 from './Mapsh/map.jsx'
 import Mapsm from './Mapsm/map.jsx'
 import Mapss from './Mapss/map.jsx';
+import Signup from './sign up/sign.jsx';
 
 // Mapping region names to their URL paths for easy access in the sidebar
 const REGION_PATHS = {
@@ -170,7 +171,7 @@ function App() {
           <Route path='/m' exact element={<MapM/>}/>
           <Route path='/sm' exact element={<Mapsm/>}/>
           <Route path='/ss' exact element={<Mapss/>}/>
-            
+          <Route path='/signup' exact element={<Signup/>}/>
         </Routes>
       </BrowserRouter>
     </>
